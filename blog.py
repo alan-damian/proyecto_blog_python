@@ -20,22 +20,15 @@ class blog(db.Model):
 def post(usuario):
     Query = db.session.query(blog).filter(blog.username == usuario).order_by(blog.texto.desc()).limit(3)
     query = Query.all()
-    Last = {}
+    Last = {"titulo": "posteo", "texto": "articulo que escribo"}
     Post = []
 
     
-    
-    for i in query:
-        if len(Last) == 0:
-            Last["1st_string"] = i.texto
-        elif len(Last) == 1:
-            Last["2nd_string"] = i.texto
-        elif len(Last) == 2:
-            Last["3rd_string"] = i.texto        
+          
 
     Post.append(Last)
 
-    return Last
+    return Post
 
 
 if __name__=="__main__":
