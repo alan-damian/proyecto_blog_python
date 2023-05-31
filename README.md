@@ -49,7 +49,8 @@ Deberá crear la base de datos SQLite "blog.db". Utilizar SQLAlchemy para crear 
 - texto --> texto (String) (texto/contenido del post)
 
 
-## Endpoints del frontend (HTML)
+## Endpoapi
+ints del frontend (HTML)
 Dentro del archivo __app.py__ deberá implementar los siguientes endpoints que responderan a las rutas del explorador del usuario.
 
 ### Endpoint login (/login)
