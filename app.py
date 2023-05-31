@@ -48,9 +48,6 @@ def usuario(usuario):
             
 
 
-
-
-
 @app.before_first_request
 def before_first_request_func():
     # Crear aquí todas las bases de datos

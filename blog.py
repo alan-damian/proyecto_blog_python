@@ -20,13 +20,22 @@ class blog(db.Model):
 def post(usuario):
     Query = db.session.query(blog).filter(blog.username == usuario).order_by(blog.texto.desc()).limit(3)
     query = Query.all()
-    Last = {"titulo": "posteo", "texto": "articulo que escribo"}
     Post = []
+    
+    Last = {}
 
+    for i in query:
+       
+
+        Last["titulo"] = i.titulo
+
+        Last["texto"] = i.texto
+
+        
     
           
 
-    Post.append(Last)
+        Post.append(Last)
 
     return Post
 
